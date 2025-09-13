@@ -35,7 +35,7 @@ try:
     a = np.linspace(0, 2*np.pi, 100)
     b = np.sin(a)
     plt.plot(a, b)
-    plt.title("正弦函数测试")
+    plt.title("sine")
     plt.show()
 except Exception as e:
     print("[X] matplotlib 测试失败:", e)
