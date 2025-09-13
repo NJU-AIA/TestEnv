@@ -32,10 +32,11 @@ except Exception as e:
 print("\n=== 测试 matplotlib ===")
 try:
     import matplotlib.pyplot as plt
-    plt.plot([0,1,2],[0,1,4])
-    plt.title("Matplotlib 测试")
-    plt.savefig("matplotlib_test.png")
-    print("\nMatplotlib 测试成功，已保存 matplotlib_test.png")
+    a = np.linspace(0, 2*np.pi, 100)
+    b = np.sin(a)
+    plt.plot(a, b)
+    plt.title("正弦函数测试")
+    plt.show()
 except Exception as e:
     print("[X] matplotlib 测试失败:", e)
 
